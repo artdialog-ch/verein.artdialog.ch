@@ -1,0 +1,18 @@
+﻿Цвет:
+
+Pink - C10 M100 Y40 K0 RGB - 252 / 0 / 153
+Orange - C0 M70 Y80 K0 - RGB - 255 / 77 / 51
+Rot- C0 M100 Y100 K0 - RGB - 255 / 0 / 0
+Grau- C0 M0 Y0 K80 - RGB - 51 / 51 / 51
+
+Шрифт 
+
+лого - Corbert
+
+Кавычки - All over again
+
+Цытаты - Franklin Gothic Medium cond
+
+H1 (загаловок) - Linux Libertine 50px, kerning 25 px
+Текст - Linux Libertine 18px , linehight 24px
+Отдельные линки Линки и формуляр . Franklin gothik book

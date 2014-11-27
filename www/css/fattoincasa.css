@@ -58,9 +58,7 @@ h6 {
     /* font-weight: 700; */
     
     /* letter-spacing: 1px; */    
-    /* kerning 50px * em = 25 px */
-    letter-spacing: 0.05em;
-    
+    letter-spacing: 0.03em;    
 }
 
 /* ram */
