@@ -1,10 +1,10 @@
 ﻿Цвет:
 
-Pink - C10 M100 Y40 K0 RGB - 252 / 0 / 153
-Orange - C0 M70 Y80 K0 - RGB - 255 / 77 / 51
+Pink - C10 M100 Y40 K0 RGB - 252 / 0 / 153  #fc0099; /* pink */ Pinky and the Brain
+Orange - C0 M70 Y80 K0 - RGB - 255 / 77 / 51	#ff4d33; /* orange */
 Rot- C0 M100 Y100 K0 - RGB - 255 / 0 / 0
 Grau- C0 M0 Y0 K80 - RGB - 51 / 51 / 51
-
+c
 Шрифт 
 
 лого - Corbert

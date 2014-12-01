@@ -5,12 +5,12 @@
 /* TODO find WOFF font files */
 @font-face {
     font-family: "All Over Again";
-    src: url('../fonts/alloveragain.ttf') format("truetype");
+    src: url('../fonts/aoa/alloveragain.woff') format('woff'), url('../fonts/aoa/alloveragain.ttf') format("truetype"); 
 }
 
 @font-face {
     font-family: "Linux Libertine";
-    src: url('../fonts/linlibertine_r.ttf') format("truetype");
+    src: url('../fonts/ll/LinLibertine_Rah.woff') format("woff"), url('../fonts/ll/LinLibertine_Rah.ttf') format("truetype");
 }
 
 /* TODO is the filename wrong! */
@@ -105,31 +105,38 @@ p {
     }
 }
 
-a {
-	font-family: "Franklin Gothik Book",Helvetica,sans-serif; /* ram */
-/*    color: #219ab3; */
-	color: red;
+a {	
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
     
+	font-family: "Franklin Gothik Book",Helvetica,sans-serif; /* ram */
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
 	text-transform: uppercase;
+		
+    color: inherit;
 }
 
-a.follow-me {
+a.ad-link {
+
 }
 
-a.follow-me:after {
+a.ad-follow-me {
+}
+
+a.ad-follow-me:after {
 	content: ' >';
 	font-weight: bolder;
 }
 
 
+a.ad-link-focus,
 a:hover,
 a:focus {
-    /* text-decoration: none; */
-    color: red;
-    /* color: #11505d; */
+    text-decoration: none; /* pal: */
+	color: red; /* pal: red */ 
 }
 
 .light {
@@ -205,7 +212,8 @@ a:focus {
     outline: 0;
 /*    background-color: rgba(255,255,255,.3); */
 	background-color: inherit;  /* ram */
-	color: red; /* ram the same as H1 title */
+	color: #ff4d33; /* pal: orange */
+	font-weight: bold;
 }
 
 .navbar-custom .nav li a:focus { /* ram */
@@ -244,11 +252,11 @@ a:focus {
     width: 100%;
     height: auto;
     padding: 100px 0;
-//    text-align: center;
-//    color: #358;
-//    color: #fff;
-//    background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;
-//    background-color: #000;
+/*    text-align: center;
+/    color: #358;
+/    color: #fff;
+/    background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;
+/    background-color: #000; */
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -337,11 +345,18 @@ ul.ad-list-inline li:last-child {
 }
 
 ul.ad-list-inline li a {
-	color: black;
+	color: inherit;
+	font-family: inherit;
 	padding: 0px 0.5pt;
 	display: block;
 	text-decoration: none;
 }
+
+ul.ad-list-inline li a:hover,
+ul.ad-list-inline li a:focus {
+	color: red; /* pal: red */	
+}
+
 
 /* TODO: Adaptive for mobile */
 blockquote.ad-footprint-orange, blockquote.ad-footprint-red {
@@ -367,14 +382,12 @@ blockquote.ad-footprint-orange:before, blockquote.ad-footprint-red:before {
 }
 
 blockquote.ad-footprint-orange:before {
-	/* background-image: url(../img/footprint-orange.png); */
-    color: orange;
-	}
+    color: #ff4d33; /* pal: orange */
+}
 
 blockquote.ad-footprint-red:before {
-	/* background-image: url(../img/footprint-red.png); */
-    color: red;
-	}
+    color: #ff0000; /* pal: red */
+}
 
 blockquote.ad-footprint-orange footer, blockquote.ad-footprint-red footer {
 	text-align: right;
@@ -400,9 +413,14 @@ blockquote.ad-footprint-orange footer:before, blockquote.ad-footprint-red footer
 }
 
 .ad-paninis .ad-caption-name {
-	font-family: "Franklin Gothic Medium Cond",Helvetica,sans-serif;
 	margin-top: .6em;
 	z-index: 0;
+}
+
+.ad-paninis .ad-caption-name a {
+	font-family: inherit;
+	text-transform: none;
+	text-decoration: none;
 }
 
 .ad-paninis .ad-caption-prof {
@@ -419,6 +437,10 @@ blockquote.ad-footprint-orange footer:before, blockquote.ad-footprint-red footer
 	font-family: "Franklin Gothik Book",Helvetica,sans-serif; 
 }
  
+ 
+.ad-artist-photo {
+	margin-bottom: 2em;
+} 
 /* end ram */
 
 @-webkit-keyframes pulse {    
@@ -466,9 +488,14 @@ blockquote.ad-footprint-orange footer:before, blockquote.ad-footprint-red footer
 }
 
 .content-section {
-   /* padding-top: 100px; */
-   padding-top: 30px; /* ram  */ 	 
-   min-height: 100%; /* ram  */
+   /* padding-top: 100px; */ 
+   padding-top: 40px; /* ram  */ 	 
+   /*  min-height: 100%; ram  */
+}
+
+.kontakt-section h1 { /* TODO: make spec h1.orangino class */
+	color: #ff4d33; /* pal: orange */
+	margin-bottom: 1.2em;
 }
 
 /* .download-section { */

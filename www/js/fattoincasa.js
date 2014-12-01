@@ -16,7 +16,7 @@ $(document).ready(function() {
 });
 
 $(document).ready($(function() {
-    $(".ad-paninis img")
+    $(".ad-panini img")
         .mouseover(function() { 
             var src = $(this).attr("src").replace(/_bw/, '_cl');
             $(this).attr("src", src);
