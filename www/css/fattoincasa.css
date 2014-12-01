@@ -1,8 +1,6 @@
 /* begin ram */
 /* end ram */
 
-/* I E: CSS3114: @font-face failed OpenType embedding permission check. Permission must be Installable. */
-/* TODO find WOFF font files */
 @font-face {
     font-family: "All Over Again";
     src: url('../fonts/aoa/alloveragain.woff') format('woff'), url('../fonts/aoa/alloveragain.ttf') format("truetype"); 
@@ -13,20 +11,19 @@
     src: url('../fonts/ll/LinLibertine_Rah.woff') format("woff"), url('../fonts/ll/LinLibertine_Rah.ttf') format("truetype");
 }
 
-/* TODO is the filename wrong! */
 @font-face {
     font-family: "Franklin Gothic Demi Cond"; 
-    src: url('../fonts/fradmcn.ttf') format("truetype");
+    src: url('../fonts/fgdc/FRADMCN.woff') format("truetype"), url('../fonts/fgdc/FRADMCN.ttf') format("truetype");
 }
 /* TODO is the filename wrong! */
 @font-face {
     font-family: "Franklin Gothic Medium Cond"; 
-    src: url('../fonts/framdcn.ttf') format("truetype");
+    src: url('../fonts/fgmc/FRAMDCN.woff') format("woff"), url('../fonts/fgmc/FRADMCN.ttf') format("truetype");
 }
 
 @font-face {
     font-family: "Franklin Gothik Book"; 
-    src: url('../fonts/frabk.ttf') format("truetype");
+    src: url('../fonts/fgb/FRABK.woff') format("woff"), url('../fonts/fgb/FRABK.ttf') format("truetype");
 }
 
 
@@ -368,7 +365,7 @@ blockquote.ad-footprint-orange, blockquote.ad-footprint-red {
 	padding: 0;
 	margin: 0 auto;	
 	margin-top: 10px;
-	width: 90%;
+	width: 90%; /* TODO ram : remove this widht*/
 }
 
 blockquote.ad-footprint-orange:before, blockquote.ad-footprint-red:before {
@@ -477,9 +474,8 @@ blockquote.ad-footprint-orange footer:before, blockquote.ad-footprint-red footer
     }
 }
 
-.intro img.logo
+header img.logo
 {
-	/* display: initial; */
 	width: 100%;
 	max-width: 140px;
 	margin-top: 1em;
