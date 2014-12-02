@@ -51,7 +51,7 @@ h6 {
     /* margin: 0 0 35px; */
     text-transform: uppercase;
     /* font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif; */
-	font-family: "Linux Libertine","Times New Roman",sans-serif;   /* actually already set by body */
+	font-family: "Linux Libertine","Times New Roman",serif;   /* actually already set by body */
     /* font-weight: 700; */
     
     /* letter-spacing: 1px; */    
@@ -406,23 +406,23 @@ blockquote.ad-footprint-orange footer:before, blockquote.ad-footprint-red footer
 
 .ad-paninis .ad-caption-name, .ad-paninis .ad-caption-prof {
 	padding: 0;
-	margin-left: .4em;
+	margin-left: .2em;
 }
 
 .ad-paninis .ad-caption-name {
 	margin-top: .6em;
-	z-index: 0;
 }
 
 .ad-paninis .ad-caption-name a {
-	font-family: inherit;
+	font-size: 20px;
+	font-family: "Franklin Gothic Medium Cond",Helvetica,sans-serif;
 	text-transform: none;
 	text-decoration: none;
 }
 
 .ad-paninis .ad-caption-prof {
-	font-family: "Franklin Gothik Book",Helvetica,sans-serif;
-	z-index: 1;
+	/* font-family: inherit; / * actually already set by body */
+	font-family: /* "Linux Libertine", */ "Times New Roman",serif; /* ram -> design mistake */
 }
 
 .container hr { 
