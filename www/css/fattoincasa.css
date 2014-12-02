@@ -73,7 +73,7 @@ h1 {
 	margin-top: 0;
 	font-family: "Franklin Gothic Medium Cond",Helvetica,sans-serif;
 	color: inherit;
-	line-height: .63;
+	line-height: .63; /* TODO: make normal and rel shift, otherwise by small no gap if 2 lines */
 }
 
 .biography h2 {
@@ -438,6 +438,7 @@ blockquote.ad-footprint-orange footer:before, blockquote.ad-footprint-red footer
 .ad-artist-photo {
 	margin-bottom: 2em;
 } 
+
 /* end ram */
 
 @-webkit-keyframes pulse {    
