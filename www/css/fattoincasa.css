@@ -416,6 +416,7 @@ nav.ad-language-menu {
 nav.ad-language-menu ul {
  	color: #fff; 			/* pal: Bianco */ 
  	text-transform: uppercase;
+ 	list-style-type: none;
 }
 
 nav.ad-language-menu ul li {
