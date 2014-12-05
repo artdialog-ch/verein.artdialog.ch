@@ -27,43 +27,6 @@ $(document).ready($(function() {
         });
 }));
 
-/*
-$(document).ready(function() {
-    $("#ad-nav").on('affixed.bs.affix', function() {
-    	console.log("The navigation menu has been affixed. Now it doesn't scroll with the page.");
-    	$("#ad-nav").addClass("navbar-fixed-top");    
-    });
-    $("#ad-nav").on('affixed-top.bs.affix', function() {
-    	console.log("affixed-top.bs.affix");
-    	$(".navbar-fixed-top").removeClass("navbar-fixed-top");    
-    });
-    
-});
-*/    
-
-//$(window).scroll(function() {
-//	if ($("#ad-nav").offset().top > 40) {
-//        $("#ad-nav-logo").addClass("hidden");
-//        $(".navbar-fixed-top").addClass("top-nav-collapse");
-//    } else {
-//        $("#ad-nav-logo").removeClass("hidden");
-//        $(".navbar-fixed-top").removeClass("top-nav-collapse");
-//    }
-//});
-
-
-//$(window).scroll(function() {
-////	if ($(".navbar").offset().top > 50) {
-//	if ($(".navbar").offset().top > 40) {
-//        $("#ad-nav-logo").addClass("hidden");
-//        $(".navbar-fixed-top").addClass("top-nav-collapse");
-//    } else {
-//        $("#ad-nav-logo").removeClass("hidden");
-//        $(".navbar-fixed-top").removeClass("top-nav-collapse");
-//    }
-//});
-
-
 // jQuery for page scrolling feature - requires jQuery Easing plugin
 $(function() {
     $('a.page-scroll').bind('click', function(event) {

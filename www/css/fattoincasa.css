@@ -1,29 +1,27 @@
-/* begin ram */
-/* end ram */
 
 @font-face {
     font-family: "All Over Again";
-    src: url('../fonts/aoa/alloveragain.woff') format('woff'), url('../fonts/aoa/alloveragain.ttf') format("truetype"); 
+    src: url('../fonts/aoa/alloveragain.ttf') format("truetype"), url('../fonts/aoa/alloveragain.woff') format('woff'); 
 }
 
 @font-face {
     font-family: "Linux Libertine";
-    src: url('../fonts/ll/LinLibertine_Rah.woff') format("woff"), url('../fonts/ll/LinLibertine_Rah.ttf') format("truetype");
+    src: url('../fonts/ll/LinLibertine_Rah.ttf') format("truetype"), url('../fonts/ll/LinLibertine_Rah.woff') format("woff");
 }
 
 @font-face {
     font-family: "Franklin Gothic Demi Cond"; 
-    src: url('../fonts/fgdc/FRADMCN.woff') format("truetype"), url('../fonts/fgdc/FRADMCN.ttf') format("truetype");
+    src: url('../fonts/fgdc/FRADMCN.ttf') format("truetype"), url('../fonts/fgdc/FRADMCN.woff') format("truetype");
 }
-/* TODO is the filename wrong! */
+
 @font-face {
     font-family: "Franklin Gothic Medium Cond"; 
-    src: url('../fonts/fgmc/FRAMDCN.woff') format("woff"), url('../fonts/fgmc/FRADMCN.ttf') format("truetype");
+    src: url('../fonts/fgmc/FRADMCN.ttf') format("truetype"), url('../fonts/fgmc/FRAMDCN.woff') format("woff");
 }
 
 @font-face {
     font-family: "Franklin Gothik Book"; 
-    src: url('../fonts/fgb/FRABK.woff') format("woff"), url('../fonts/fgb/FRABK.ttf') format("truetype");
+    src: url('../fonts/fgb/FRABK.ttf') format("truetype"), url('../fonts/fgb/FRABK.woff') format("woff");
 }
 
 
@@ -78,7 +76,7 @@ h1 {
 
 .biography h2 {
     color: #f00;
-    margin-bottom: 1.2em;
+    margin-bottom: 1em;
 }
  
 
@@ -386,16 +384,33 @@ blockquote.ad-footprint-orange footer:before, blockquote.ad-footprint-red footer
 	font-family: /* "Linux Libertine", */ "Times New Roman",serif; /* ram -> design mistake */
 }
 
-.container hr { 
+hr {
 	border-color: black;
-	width: 100%
 }
+.container hr {
+	width: 100%;
+}	
+@media (min-width: 768px) {
+  .container-fluid hr {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container-fluid hr {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container-fluid hr {
+    width: 1170px;
+  }
+}
+
 
 .container form {
 	font-family: "Franklin Gothik Book",Helvetica,sans-serif; 
 }
- 
- 
+  
 .ad-artist-photo {
 	margin-bottom: 2em;
 } 
@@ -422,18 +437,18 @@ nav.ad-language-menu ul {
 nav.ad-language-menu ul li {
 	padding-left: 1ex;	 
 	width: 100%;
+	font-size: 120%;
 	line-height: 1.9;
 	margin-left: auto; 
 	margin-right: 0;
 	box-shadow: 3px 3px 3px grey;
-	background: rgb(255, 0, 0); 			/* pal: Rosso */ /* The Fallback */
-   	/* background: rgba(255, 0, 0, 0.8); 		/ * pal: Rosso */ 	
+	background: rgb(255, 0, 0); 			/* pal: Rosso */ 
 }
 
 nav.ad-language-menu ul li[lang] {
-	background: rgb(252, 0, 153); 			/* pal: Rosa */ /* The Fallback */
-   	/* background: rgba(252, 0, 153, 0.8); 	/ * pal: Rosa */ 	
+	background: rgb(252, 0, 153); 			/* pal: Rosa */
 	width: 70%; 
+	padding-left: 0;	/* set padding-left: 1ex; back in nested <a> to make the whole area clickable */ 
 }
 
 nav.ad-language-menu ul li[lang]:hover, 
@@ -446,7 +461,11 @@ nav.ad-language-menu ul li[lang]:active {
 }
 
 nav.ad-language-menu ul li[lang] a {
+	font-family: "Linux Libertine","Times New Roman",serif;
+	padding-left: 1ex;	 
 	color: inherit;
+	display: block;
+	width: 100%
 }
 
 /* end ram */
@@ -487,11 +506,7 @@ nav.ad-language-menu ul li[lang] a {
 
 header img.logo
 {
-	width: 100%;
-	max-width: 140px;
 	margin-top: 1em;
-	margin-right: auto;
-	margin-left: auto;
 }
 
 .content-section {
@@ -519,6 +534,7 @@ header img.logo
 
 .kontakt-section img.logo {
 	margin-bottom: .5em;
+	width: 14ch;
 }
 
 .kontakt-section address a { /* TODO: actually make it normal, but ad-link is uppercase */
@@ -536,15 +552,12 @@ header img.logo
 	.kontakt-section {
 	    padding: 15% 0;
 	}
-	
-	.kontakt-section img.logo {
-		max-width: 100px;
-	}
 }
 
 .btn {
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    /* font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif; */
+    font-family: "Franklin Gothic Medium Cond",Helvetica,sans-serif;
     font-weight: 400;
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
