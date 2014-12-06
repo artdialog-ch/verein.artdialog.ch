@@ -129,8 +129,8 @@ a.ad-follow-me:after {
 a.ad-link-focus,
 a:hover,
 a:focus {
-    text-decoration: none; /* pal: */
-	color: red; /* pal: red */ 
+    text-decoration: none; 
+	color: red; /* pal: rosso */ 
 }
 
 .light {
@@ -144,7 +144,7 @@ a:focus {
     /* border-bottom: 1px solid rgba(255,255,255,.3); */
     text-transform: uppercase;
     font-family: "Franklin Gothic Demi Cond",Helvetica,Arial,sans-serif;
-    background-color: #fff; /* explicit non transparen background = body background */
+    background-color: #fff; /* pal: bianco */ /* explicit non transparen background = body background */
     
 }
 
@@ -167,7 +167,6 @@ a:focus {
 .navbar-custom .navbar-brand .navbar-toggle {
     padding: 4px 6px;
     font-size: 16px;
-    /* color: #fff; */
 }
 
 .navbar-custom .navbar-brand .navbar-toggle:focus,
@@ -195,7 +194,7 @@ a:focus {
 	-webkit-transition: background .3s ease-in-out;
     -moz-transition: background .3s ease-in-out;
     transition: background .3s ease-in-out;
-    color: black; /* ram */
+    color: black; /* pal Nero */
 }
 
 .navbar-custom .nav li a:hover,
