@@ -1,6 +1,6 @@
 <?php
 
-$supp_langs = array('fr', 'de'); // the first language is default
+$supp_langs = array('de', 'fr'); // the first language is default
 $redirect_lang = $supp_langs[0];
 
 $languages = explode(',',$_SERVER['HTTP_ACCEPT_LANGUAGE']);
