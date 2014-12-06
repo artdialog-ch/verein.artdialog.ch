@@ -58,7 +58,6 @@ h6 {
 
 /* ram */
 h1 {
-    color: #f00;
     font-size: 50px;
 }
 
@@ -310,24 +309,29 @@ ul.ad-list-inline li a {
 
 ul.ad-list-inline li a:hover,
 ul.ad-list-inline li a:focus {
-	color: red; /* pal: red */	
+	color: #f00; /* pal: rosso */	
 }
 
 
 /* TODO: Adaptive for mobile */
-blockquote.ad-footprint-orange, blockquote.ad-footprint-red {
+blockquote.adpal-arancione,
+blockquote.adpal-rosso,
+blockquote.adpal-rosa,
+blockquote.adpal-grigio,
+blockquote.adpal-bianco,
+blockquote.adpal-nero,
+blockquote {
+	color: inherit;
 	font-family: "Franklin Gothic Medium Cond",Helvetica,sans-serif; 	
-	border-style: none;
-	/* background-repeat: no-repeat; */
+    border: 0;
 	font-size: 30pt;
-	/* text-align: justify; */
 	padding: 0;
 	margin: 0 auto;	
 	margin-top: 10px;
 	width: 90%; /* TODO ram : remove this widht*/
 }
 
-blockquote.ad-footprint-orange:before, blockquote.ad-footprint-red:before {
+blockquote:before {
     font-family: "All Over Again",serif;
     content: "\201C";
     font-size: 180px;
@@ -337,17 +341,40 @@ blockquote.ad-footprint-orange:before, blockquote.ad-footprint-red:before {
     left: -5px;
 }
 
-blockquote.ad-footprint-orange:before {
-    color: #ff4d33; /* pal: orange */
+
+.adpal-arancione,
+blockquote.adpal-arancione:before {
+    color: #ff4d33; /* pal: arancione */
 }
 
-blockquote.ad-footprint-red:before {
-    color: #ff0000; /* pal: red */
+.adpal-rosso,
+blockquote.adpal-rosso:before {
+    color: #f00; /* pal: rosso */
 }
 
-blockquote.ad-footprint-orange footer, blockquote.ad-footprint-red footer {
+.adpal-rosa,
+blockquote.adpal-rosa:before {
+    color: #fc0099; /* pal: rosa */
+}
+
+.adpal-grigio,
+blockquote.adpal-grigio:before {
+    color: #333333; /* pal: grigio */	
+}
+
+.adpal-bianco,
+blockquote.adpal-bianco:before {
+    color: #fFF; /* pal: bianco */	
+}
+
+.adpal-nero,
+blockquote.adpal-nero:before {
+    color: #000; /* pal: nero */	
+}
+
+
+blockquote footer {
 	text-align: right;
-	/* font-size: 80%; - alredy inbootsrap*/ 
 	padding: 0;
 	color: inherit;
 }
@@ -504,8 +531,7 @@ nav.ad-language-menu ul li[lang] a {
     }
 }
 
-header img.logo
-{
+header img.logo {
 	margin-top: 1em;
 }
 
@@ -515,8 +541,7 @@ header img.logo
    /*  min-height: 100%; ram  */
 }
 
-.kontakt-section h1 { /* TODO: make spec h1.orangino class */
-	color: #ff4d33; /* pal: orange */
+.kontakt-section h1 { 
 	margin-bottom: 1.2em;
 }
 
@@ -524,7 +549,7 @@ header img.logo
 .kontakt-section {
     width: 100%;
     padding: 50px 0;
-    color: #000;
+    color: #000; /* pal Nero */
     background: url(../img/bg/biel-bienne_bw.png) no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -565,12 +590,10 @@ header img.logo
 }
 
 .btn-default {
-	/* border: 1px solid #219ab3; */
-	border: 1px solid black;
-    /* color: #219ab3; */
-    color: white; 
-    /* background-color: transparent; */
-    background-color: black;
+	border: 1px solid black;  /* pal: nero */ 
+    color: white;	/* pal bianco */ 
+    background-color: #333333; /* pal grigio */ /* fallback */ 
+    background-color: rgba(0,0,0,.5);  /* pal nero */ 
 }
 
 .btn-default:hover,
@@ -578,10 +601,10 @@ header img.logo
 /*    border: 1px solid #219ab3; */
     border: 1px solid black;
     outline: 0;
-    /* color: #000; */
-    color: black;
-    /*background-color: #219ab3; */
-    background-color: white;
+    color:  #333333; /* pal grigio */
+    background-color: #fff; /* pal bianco */ /* fallback */
+        background-color: rgba(255,255,255,.5);  /* pal bianco */ 
+    
 }
 
 /* ram
@@ -638,4 +661,29 @@ img::-moz-selection {
 
 body {
     /* webkit-tap-highlight-color: rgba(255,255,255,.2); */ /* TODO: find out, this is for Safari on iPhone */
+}
+
+.html5 a {
+	display: inline-block;
+}
+
+
+.debug {
+	display: none;
+}
+
+.html5 .html5logo img {
+	width: 50px;
+	height: auto;
+}
+
+.html5 .css3logo {
+	position: relative;
+    left: -13px;
+    top: 7px;	
+}
+.html5 .css3logo img {
+	width: 18px; 
+	height: auto;
+	vertical-align: middle;
 }

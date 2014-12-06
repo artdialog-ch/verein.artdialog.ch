@@ -7,12 +7,19 @@
 // end ram
 
 $(document).ready(function() {
+	
+	
 	var adnav = $("#ad-nav");
 	adnav.affix({
         offset: { 
             top: adnav.offset().top
         }
     });
+	
+	if (window.location.search.substring(1).indexOf('debug') >=0)
+	{
+		$(".debug").removeClass("debug");
+	}
 });
 
 $(document).ready($(function() {
