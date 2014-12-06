@@ -16,7 +16,7 @@
 
 @font-face {
     font-family: "Franklin Gothic Medium Cond"; 
-    src: url('../fonts/fgmc/FRADMCN.ttf') format("truetype"), url('../fonts/fgmc/FRAMDCN.woff') format("woff");
+    src: url('../fonts/fgmc/FRAMDCN.ttf') format("truetype"), url('../fonts/fgmc/FRAMDCN.woff') format("woff");
 }
 
 @font-face {
