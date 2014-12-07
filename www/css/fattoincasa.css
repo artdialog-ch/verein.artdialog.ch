@@ -399,8 +399,8 @@ blockquote.ad-footprint-orange footer:before, blockquote.ad-footprint-red footer
 
 @media (min-width: 768px) {
 	.ad-paninis .ad-caption-name, .ad-paninis .ad-caption-prof {
-	 margin-left: 12%;
-	text-align: left;
+	 	margin-left: 12%;
+		text-align: left;
 	}	
 }
 
@@ -579,6 +579,16 @@ header img.logo {
     -o-background-size: cover;
 }
 
+.kontakt-section .ad-logo-block {
+	text-align: center;	
+}
+
+@media (min-width: 768px) {
+	.kontakt-section .ad-logo-block {
+		text-align: left;
+	}		
+}
+
 .kontakt-section img.logo {
 	margin-bottom: .5em;
 	width: 14ch;
@@ -586,17 +596,13 @@ header img.logo {
 
 @media(min-width:767px) {
     .content-section {
-/*        padding-top: 250px; */
 	    padding-top: 30px; /* ram  */ 	 
 		min-height: 100%;
-		/* min-height: auto; */
     }
-
 
 	.kontakt-section {
 	    padding-top: 20%;
 	}
-	
 }
 
 .btn {
