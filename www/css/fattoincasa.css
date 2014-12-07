@@ -536,18 +536,19 @@ header img.logo {
 
 .content-section {
    /* padding-top: 100px; */ 
-   padding-top: 40px; /* ram  */ 	 
+   padding-top: 20px; /* ram  */ 	 
    /*  min-height: 100%; ram  */
 }
 
-.kontakt-section h1 { 
+.kontakt-section h1 {
 	margin-bottom: 1.2em;
 }
 
 /* .download-section { */
 .kontakt-section {
     width: 100%;
-    padding: 50px 0;
+    /* padding: 50px 0; */
+    padding: 15% 0;
     color: #000; /* pal Nero */
     background: url(../img/bg/biel-bienne_bw.png) no-repeat center center scroll;
     -webkit-background-size: cover;
@@ -573,9 +574,11 @@ header img.logo {
 		/* min-height: auto; */
     }
 
+
 	.kontakt-section {
-	    padding: 15% 0;
+	    padding-top: 20%;
 	}
+	
 }
 
 .btn {
