@@ -108,7 +108,6 @@ a {
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
-	text-transform: uppercase; /* TODO: remove it from default, use ad-link */
 		
     color: inherit;
 }
@@ -301,9 +300,10 @@ ul.ad-list-inline li:last-child {
 ul.ad-list-inline li a {
 	color: inherit;
 	font-family: inherit;
-	padding: 0px 0.5pt;
+	padding: 0px 1ch;
 	display: block;
 	text-decoration: none;
+	line-height: 1;
 }
 
 ul.ad-list-inline li a:hover,
@@ -384,14 +384,31 @@ blockquote.ad-footprint-orange footer:before, blockquote.ad-footprint-red footer
 
 .ad-paninis {
 	font-size: 18px;
-	margin-bottom: 2em;
 	letter-spacing: 0.03em;
 	line-height: 1.1;
 }
 
+.ad-panini {
+	margin-bottom: 2em;
+}
+
 .ad-paninis .ad-caption-name, .ad-paninis .ad-caption-prof {
 	padding: 0;
-	margin-left: .2em;
+	text-align: center;
+}
+
+@media (min-width: 768px) {
+	.ad-paninis .ad-caption-name, .ad-paninis .ad-caption-prof {
+	 margin-left: 12%;
+	text-align: left;
+	}	
+}
+
+
+@media (min-width: 992px) {
+	.ad-paninis .ad-caption-name, .ad-paninis .ad-caption-prof {
+	 margin-left:  .2em;
+	}	
 }
 
 .ad-paninis .ad-caption-name {
@@ -433,8 +450,13 @@ hr {
 }
 
 
-.container form {
+/* ram  overwrite some bootstraps classes*/
+.ad-form {
 	font-family: "Franklin Gothik Book",Helvetica,sans-serif; 
+}
+
+.form-control:focus {
+	border-color: #f00; /* pal: Rosso */	
 }
   
 .ad-artist-photo {
@@ -560,10 +582,6 @@ header img.logo {
 .kontakt-section img.logo {
 	margin-bottom: .5em;
 	width: 14ch;
-}
-
-.kontakt-section address a { /* TODO: actually make it normal, but ad-link is uppercase */
-	text-transform: none;
 }
 
 @media(min-width:767px) {
