@@ -8,7 +8,6 @@
 
 $(document).ready(function() {
 	
-	
 	var adnav = $("#ad-nav");
 	adnav.affix({
         offset: { 
