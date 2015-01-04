@@ -7,7 +7,6 @@
 // end ram
 
 $(document).ready(function() {
-	
 	var adnav = $("#ad-nav");
 	adnav.affix({
         offset: { 
@@ -44,7 +43,7 @@ $(function() {
     });
 });
 
-//// Closes the Responsive Menu on Menu Item Click
-//$('.navbar-collapse ul li a').click(function() {
-//    $('.navbar-toggle:visible').click();
-//});
+// Closes the Responsive Menu on Menu Item Click
+$('.navbar-collapse ul li a').click(function() {
+    $('.navbar-toggle:visible').click();
+});

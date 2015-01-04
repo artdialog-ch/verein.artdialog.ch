@@ -24,7 +24,6 @@
     src: url('../fonts/fgb/FRABK.ttf') format("truetype"), url('../fonts/fgb/FRABK.woff') format("woff");
 }
 
-
 body {
     width: 100%;
     height: 100%;
@@ -46,19 +45,15 @@ h3,
 h4,
 h5,
 h6 {
-    /* margin: 0 0 35px; */
     text-transform: uppercase;
-    /* font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif; */
 	font-family: "Linux Libertine","Times New Roman",serif;   /* actually already set by body */
-    /* font-weight: 700; */
-    
     /* letter-spacing: 1px; */    
     letter-spacing: 0.03em;    
 }
 
-/* ram */
 h1 {
     font-size: 50px;
+    margin-top: 1em; /* == navbar width */
 }
 
 /* ram define text-transform: none; as standard, overwrite for index.html */
@@ -70,7 +65,7 @@ h1 {
 	margin-top: 0;
 	font-family: "Franklin Gothic Medium Cond",Helvetica,sans-serif;
 	color: inherit;
-	line-height: .63; /* TODO: make normal and rel shift, otherwise by small no gap if 2 lines */
+	line-height: .7;
 }
 
 .biography h2 {
@@ -78,10 +73,6 @@ h1 {
     margin-bottom: 1em;
 }
  
-
-/* end ram */
-
-
 p {
     margin: 0 0 25px;
     /* font-size: 18px; */
@@ -136,20 +127,21 @@ a:focus {
     font-weight: 400;
 }
 
-/* TODO .navbar-custom -> navbar-default http://getbootstrap.com/customize/#less-variables-section */
-
 .navbar-custom {
     margin-bottom: 0;
     /* border-bottom: 1px solid rgba(255,255,255,.3); */
     text-transform: uppercase;
     font-family: "Franklin Gothic Medium Cond",Helvetica,sans-serif;
     background-color: #fff; /* pal: bianco */ /* explicit non transparen background = body background */
-    
 }
 
-/* ram */
+.navbar-main-collapse {
+    width: 45%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 .affix {
-	position: fixed;
 	width: 100%;
     top: 0;
     z-index: 1030;
@@ -215,11 +207,9 @@ a:focus {
 
 @media(min-width:767px) {
     .navbar {
-        /* padding: 20px 0; */
-        /* padding: 23vh 0; *//*  ram */ 
+        padding: 1em 0;
         border-bottom: 0;
         letter-spacing: 1px;
-        /* background: 0 0; ram */
         -webkit-transition: background .2s ease-in-out,padding .3s ease-in-out;
         -moz-transition: background .2s ease-in-out,padding .3s ease-in-out;
         transition: background .2s ease-in-out,padding .3s ease-in-out; 
@@ -239,7 +229,7 @@ a:focus {
     */
 }
 
-.intro {
+._intro {
     display: table;
     width: 100%;
     height: auto;
@@ -255,16 +245,16 @@ a:focus {
     -o-background-size: cover;
 }
 
-.intro .intro-body {
+._intro ._intro-body {
     display: table-cell;
     vertical-align: middle;
 }
 
-.intro .intro-body .brand-heading {
+._intro .intro-body .brand-heading {
     font-size: 40px;
 }
 
-.intro .intro-body .intro-text {
+._intro .intro-body .intro-text {
     font-size: 18px;
 }
 
@@ -319,15 +309,20 @@ blockquote.adpal-rosa,
 blockquote.adpal-grigio,
 blockquote.adpal-bianco,
 blockquote.adpal-nero,
-blockquote {
+blockquote, blockquote p {
 	color: inherit;
 	font-family: "Franklin Gothic Medium Cond",Helvetica,sans-serif; 	
     border: 0;
 	font-size: 30pt;
 	padding: 0;
 	margin: 0 auto;	
-	margin-top: 10px;
-	width: 90%; /* TODO ram : remove this widht*/
+	margin-top: 1.4em;
+}
+
+blockquote p {
+	line-height: 1.1;
+	margin: initial;
+	padding: initial;
 }
 
 blockquote:before {
@@ -386,6 +381,9 @@ blockquote.ad-footprint-orange footer:before, blockquote.ad-footprint-red footer
 	font-size: 18px;
 	letter-spacing: 0.03em;
 	line-height: 1.1;
+	width: 95%;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .ad-panini {
@@ -411,6 +409,7 @@ blockquote.ad-footprint-orange footer:before, blockquote.ad-footprint-red footer
 	}	
 }
 
+
 .ad-paninis .ad-caption-name {
 	margin-top: .6em;
 }
@@ -430,29 +429,29 @@ blockquote.ad-footprint-orange footer:before, blockquote.ad-footprint-red footer
 hr {
 	border-color: black;
 }
-.container hr {
-	width: 100%;
-}	
-@media (min-width: 768px) {
-  .container-fluid hr {
-    width: 750px;
-  }
-}
-@media (min-width: 992px) {
-  .container-fluid hr {
-    width: 970px;
-  }
-}
-@media (min-width: 1200px) {
-  .container-fluid hr {
-    width: 1170px;
-  }
+
+section > hr {
+	width: 96%;
 }
 
+header > .container-fluid {
+	padding-right: initial;
+	padding-left: initial;
+}
 
 /* ram  overwrite some bootstraps classes*/
 .ad-form {
-	font-family: "Franklin Gothik Book",Helvetica,sans-serif; 
+	font-family: "Franklin Gothik Book",Helvetica,sans-serif;
+	width: 95%;
+	margin-right: auto;
+  	margin-left: auto;
+}
+
+@media (min-width: 768px) {
+	.ad-form {
+	width: 100%;
+	
+	}
 }
 
 .form-control:focus {
@@ -471,7 +470,7 @@ hr {
 nav.ad-language-menu {
 	position: fixed; 
 	right: 0; 
-	top: 3em; 
+	top: 4em; 
 	width: 13ex; 
 	z-index: 11032;	
 }
@@ -554,6 +553,7 @@ nav.ad-language-menu ul li[lang] a {
 
 header img.logo {
 	margin-top: 1em;
+	width: 10em;
 }
 
 .content-section {
@@ -571,7 +571,7 @@ header img.logo {
     width: 100%;
     padding: 15% 0;
     color: #000; /* pal Nero */
-    background: url(../img/bg/biel-bienne_bw.png) no-repeat center center scroll;
+    background: url(../img/bg/biel-bienne_bw.png) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -627,30 +627,6 @@ header img.logo {
         background-color: rgba(255,255,255,.5);  /* pal bianco */ 
     
 }
-
-/* ram
-ul.banner-social-buttons {
-    margin-top: 0;
-}
-
-@media(max-width:1199px) {
-    ul.banner-social-buttons {
-        margin-top: 15px;
-    }
-}
-
-@media(max-width:767px) {
-    ul.banner-social-buttons li {
-        display: block;
-        margin-bottom: 20px;
-        padding: 0;
-    }
-
-    ul.banner-social-buttons li:last-child {
-        margin-bottom: 0;
-    }
-}
-*/
 
 footer {
     padding: 1em 0;
