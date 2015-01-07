@@ -138,7 +138,26 @@ a:focus {
 .navbar-main-collapse {
     width: 45%;
 	margin-left: auto;
-	margin-right: auto;
+}
+
+.in ul.nav li {
+	border-bottom: 1px solid #333333; /* pal Grigio */
+}
+
+.in ul.nav li:last-child {
+	border-bottom: none;
+}
+
+
+@media(min-width:767px) {
+	.navbar-main-collapse {
+		border-style: none;
+		margin-right: auto;
+	}
+	
+	.in ul.nav li {
+		border-bottom: none;
+	}
 }
 
 .affix {
