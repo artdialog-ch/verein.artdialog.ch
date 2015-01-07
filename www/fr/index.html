@@ -210,18 +210,18 @@
 				</p>
 			</div>
 			<div class="col-sm-6">
-				<form role="form" class="ad-form" onsubmit="javascript:alert('sorry, wird noch gebaut!')">
+				<form role="form" class="ad-form" action="index.php#kontakt" method="POST">
 				 	<div class="form-group">
-				   		<input type="text" class="form-control ad-form-control" id="forminput-name" placeholder="Nom">
+				   		<input type="text" class="form-control ad-form-control" id="forminput-name" name="name" placeholder="Nom" required >
 				 	</div>				
 				 	<div class="form-group">
-				   		<input type="email" class="form-control ad-form-control" id="forminput-email" placeholder="E-mail">
+				   		<input type="email" class="form-control ad-form-control" id="forminput-email" name="email" placeholder="E-mail" required >
 				 	</div>				
 				 	<div class="form-group">
-				   		<input type="text" class="form-control ad-form-control" id="forminput-betreff" placeholder="Sujet">
+				   		<input type="text" class="form-control ad-form-control" id="forminput-betreff" name="subject" placeholder="Sujet" required >
 				 	</div>				
 				 	<div class="form-group">
-				    	<textarea class="form-control ad-form-control" rows="3" placeholder="Message"></textarea>
+				    	<textarea class="form-control ad-form-control" rows="3" name="message" placeholder="Message" required ></textarea>
 				    </div>				
 				 	<div class="form-group text-right">
 	 					<button type="submit" class="btn btn-default">Envoyer</button>
