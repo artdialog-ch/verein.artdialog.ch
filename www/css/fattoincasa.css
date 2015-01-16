@@ -233,48 +233,6 @@ a:focus {
         -moz-transition: background .2s ease-in-out,padding .3s ease-in-out;
         transition: background .2s ease-in-out,padding .3s ease-in-out; 
     }
-
-	/* normal on top (except first page) */
-	/*
-    .top-nav-collapse { 
-        padding: 0;
-        / * background-color: #000; * /
-        background-color: #FFF;
-    }
-
-    .navbar-custom.top-nav-collapse {
-        border-bottom: 1px solid rgba(255,255,255,.3);
-    }
-    */
-}
-
-._intro {
-    display: table;
-    width: 100%;
-    height: auto;
-    padding: 100px 0;
-/*    text-align: center;
-/    color: #358;
-/    color: #fff;
-/    background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;
-/    background-color: #000; */
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-}
-
-._intro ._intro-body {
-    display: table-cell;
-    vertical-align: middle;
-}
-
-._intro .intro-body .brand-heading {
-    font-size: 40px;
-}
-
-._intro .intro-body .intro-text {
-    font-size: 18px;
 }
 
 @media(min-width:767px) {
@@ -320,8 +278,6 @@ ul.ad-list-inline li a:focus {
 	color: #f00; /* pal: rosso */	
 }
 
-
-/* TODO: Adaptive for mobile */
 blockquote.adpal-arancione,
 blockquote.adpal-rosso,
 blockquote.adpal-rosa,
@@ -332,10 +288,20 @@ blockquote, blockquote p {
 	color: inherit;
 	font-family: "Franklin Gothic Medium Cond",Helvetica,sans-serif; 	
     border: 0;
-	font-size: 30pt;
+	font-size: 16pt;
 	padding: 0;
 	margin: 0 auto;	
 	margin-top: 1.4em;
+}
+
+blockquote:before {
+    font-family: "All Over Again",serif;
+    content: "\201C";
+    font-size: 90px;
+    float: left;
+    position: relative; 
+    top: .25em;
+    left: -5px;
 }
 
 blockquote p {
@@ -344,16 +310,22 @@ blockquote p {
 	padding: initial;
 }
 
-blockquote:before {
-    font-family: "All Over Again",serif;
-    content: "\201C";
-    font-size: 180px;
-    float: left;
-    position: relative; 
-    top: .25em;
-    left: -5px;
+@media(min-width:767px) {
+	blockquote.adpal-arancione,
+	blockquote.adpal-rosso,
+	blockquote.adpal-rosa,
+	blockquote.adpal-grigio,
+	blockquote.adpal-bianco,
+	blockquote.adpal-nero,
+	blockquote, blockquote p {
+		color: inherit;
+		font-size: 30pt;
+	}
+	
+	blockquote:before {
+	    font-size: 180px;
+	}
 }
-
 
 .adpal-arancione,
 blockquote.adpal-arancione:before {
