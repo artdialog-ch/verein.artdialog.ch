@@ -1,11 +1,3 @@
-// jQuery to collapse the navbar on scroll
-
-///* affix the navbar after scroll below header */
-//http://www.bootply.com/96188
-// http://jsfiddle.net/skelly/df8tb/
-/* affix the navbar after scroll below header */
-// end ram
-
 $(document).ready(function() {
 	var adnav = $("#ad-nav");
 	adnav.affix({
@@ -13,6 +5,8 @@ $(document).ready(function() {
             top: adnav.offset().top
         }
     });
+	
+	new WOW().init({ mobile: false});
 	
 	if (window.location.search.substring(1).indexOf('debug') >=0)
 	{
