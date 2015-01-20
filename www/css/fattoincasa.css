@@ -381,6 +381,12 @@ blockquote.ad-footprint-orange footer:before, blockquote.ad-footprint-red footer
 	margin-bottom: 2em;
 }
 
+.ad-panini.animated {
+	-webkit-animation-duration: 3s;
+    -moz-animation-duration: 3s;
+    animation-duration: 3s;
+}
+
 .ad-paninis .ad-caption-name, .ad-paninis .ad-caption-prof {
 	padding: 0;
 	text-align: center;
@@ -625,26 +631,6 @@ footer {
 
 footer p {
     margin: 0;
-}
-
-::-moz-selection {
-    text-shadow: none;
-    background: #fcfcfc;
-    background: rgba(255,255,255,.2);
-}
-
-::selection {
-    text-shadow: none;
-    background: #fcfcfc;
-    background: rgba(255,255,255,.2);
-}
-
-img::selection {
-    background: 0 0;
-}
-
-img::-moz-selection {
-    background: 0 0;
 }
 
 body {
