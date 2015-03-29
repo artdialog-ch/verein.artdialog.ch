@@ -1,37 +1,27 @@
-
-@font-face {
-    font-family: "All Over Again";
-    src: url('../fonts/aoa/alloveragain.ttf') format("truetype"), url('../fonts/aoa/alloveragain.woff') format('woff'); 
-}
-
 @font-face {
     font-family: "Linux Libertine";
     src: url('../fonts/ll/LinLibertine_Rah.ttf') format("truetype"), url('../fonts/ll/LinLibertine_Rah.woff') format("woff");
 }
 
 @font-face {
-    font-family: "Franklin Gothic Demi Cond"; 
-    src: url('../fonts/fgdc/FRADMCN.ttf') format("truetype"), url('../fonts/fgdc/FRADMCN.woff') format("truetype");
-}
-
-@font-face {
-    font-family: "Franklin Gothic Medium Cond"; 
+    font-family: "Franklin Gothic Medium Cond";
     src: url('../fonts/fgmc/FRAMDCN.ttf') format("truetype"), url('../fonts/fgmc/FRAMDCN.woff') format("woff");
 }
 
 @font-face {
-    font-family: "Franklin Gothik Book"; 
+    font-family: "Franklin Gothik Book";
     src: url('../fonts/fgb/FRABK.ttf') format("truetype"), url('../fonts/fgb/FRABK.woff') format("woff");
 }
 
+@import url(http://fonts.googleapis.com/css?family=Oswald);
 body {
     width: 100%;
-    height: 100%;
-	font-family: "Linux Libertine","Times New Roman",serif;
+    font-family: "Linux Libertine", "Times New Roman", serif;
     color: #000;
     font-size: 16px;
-    
     -ms-overflow-style: scrollbar;
+    position: relative;
+    overflow: scroll;
 }
 
 html {
@@ -46,81 +36,73 @@ h4,
 h5,
 h6 {
     text-transform: uppercase;
-	font-family: "Linux Libertine","Times New Roman",serif;   /* actually already set by body */
-    /* letter-spacing: 1px; */    
-    letter-spacing: 0.03em;    
+    font-family: "Linux Libertine", "Times New Roman", serif;  /* actually already set by body */
+    letter-spacing: 0.03em;
 }
 
 h1 {
     font-size: 50px;
-    margin-top: 1em; /* == navbar width */
+    margin-top: 0;
+    margin-bottom: 20px; /* == navbar width */
 }
 
-/* ram define text-transform: none; as standard, overwrite for index.html */
-.biography h1, .biography h2, .biography h3, .biography h4, .biography h5, .biography h6 {
-	text-transform: none;	
+.biography h1,
+.biography h2,
+.biography h3,
+.biography h4,
+.biography h5,
+.biography h6 {
+    text-transform: none;
 }
 
 .biography h1 {
-	margin-top: 0;
-	font-family: "Franklin Gothic Medium Cond",Helvetica,sans-serif;
-	color: inherit;
-	line-height: .7;
+    margin-top: 0;
+    font-family: 'Oswald', sans-serif;
+    font-size: 48px;
+    color: inherit;
 }
 
 .biography h2 {
     color: #f00;
     margin-bottom: 1em;
 }
- 
+
 p {
     margin: 0 0 25px;
-    /* font-size: 18px; */
     font-size: 16px;
     line-height: 1.5;
 }
 
 @media(min-width:767px) {
     p {
-		margin: 0 0 35px;
-        /* font-size: 20px; */
+        margin: 0 0 35px;
         font-size: 18px;
-        /* line-height: 1.6; */
-    	line-height: 24px;
+        line-height: 24px;
     }
 }
 
-a {	
-    -webkit-transition: all .2s ease-in-out;
-    -moz-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out;
-    
-	font-family: "Franklin Gothik Book",Helvetica,sans-serif; /* ram */
-    -webkit-transition: all .2s ease-in-out;
-    -moz-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out;
-		
+a {
+    font-family: "Franklin Gothik Book", Helvetica, sans-serif;
     color: inherit;
+	-webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
 }
 
 a.ad-link {
-	text-transform: uppercase;			
-}
-
-a.ad-follow-me {
+    text-transform: uppercase;
 }
 
 a.ad-follow-me:after {
-	content: ' >';
-	font-weight: bolder;
+    content: ' >';
+    font-weight: bolder;
 }
-
 
 a.ad-link-focus,
 a:hover,
 a:focus {
-    text-decoration: none; 
-	color: red; /* pal: rosso */ 
+    text-decoration: none;
+    color: red;  /* pal: rosso */
 }
 
 .light {
@@ -129,39 +111,36 @@ a:focus {
 
 .navbar-custom {
     margin-bottom: 0;
-    /* border-bottom: 1px solid rgba(255,255,255,.3); */
     text-transform: uppercase;
-    font-family: "Franklin Gothic Medium Cond",Helvetica,sans-serif;
-    background-color: #fff; /* pal: bianco */ /* explicit non transparen background = body background */
+    font-family: "Franklin Gothic Medium Cond", Helvetica, sans-serif;
+    background-color: #fff;  /* pal: bianco */    /* explicit non transparen background = body background */
 }
 
 .navbar-main-collapse {
     width: 45%;
-	margin-left: auto;
+    margin-left: auto;
 }
 
 .in ul.nav li {
-	border-bottom: 1px solid #333333; /* pal Grigio */
+    border-bottom: 1px solid #333333;    /* pal Grigio */
 }
 
 .in ul.nav li:last-child {
-	border-bottom: none;
+    border-bottom: none;
 }
 
-
 @media(min-width:767px) {
-	.navbar-main-collapse {
-		border-style: none;
-		margin-right: auto;
-	}
-	
-	.in ul.nav li {
-		border-bottom: none;
-	}
+    .navbar-main-collapse {
+        border-style: none;
+        margin-right: auto;
+    }
+    .in ul.nav li {
+        border-bottom: none;
+    }
 }
 
 .affix {
-	width: 100%;
+    width: 100%;
     top: 0;
     z-index: 1030;
 }
@@ -184,24 +163,14 @@ a:focus {
     outline: 0;
 }
 
-.navbar-custom a {
-    /* color: #fff; */
-}
-
-.navbar-custom .nav li.active {
-    /* outline: none; */
-/*    background-color: rgba(255,255,255,.3); */
-    /* background-color: green;  TOTO: make shift */
-}
-
 .navbar-custom .nav li.active a:before {
-	display: block;
-	content: '\00A0';
-	height: 7px;
+    display: block;
+    content: '\00A0';
+    height: 7px;
 }
 
 .navbar-custom .nav li a {
-	-webkit-transition: background .3s ease-in-out;
+    -webkit-transition: background .3s ease-in-out;
     -moz-transition: background .3s ease-in-out;
     transition: background .3s ease-in-out;
     color: black; /* pal Nero */
@@ -214,14 +183,12 @@ a:focus {
 .navbar-custom .nav li.active a:focus,
 .navbar-custom .nav li a.active {
     outline: 0;
-/*    background-color: rgba(255,255,255,.3); */
-	background-color: inherit;  /* ram */
-	color: #ff4d33; /* pal: orange */
+    background-color: inherit;
+    color: #ff4d33;    /* pal: orange */
 }
 
-.navbar-custom .nav li a:focus { /* ram */
-	/* border: 1px dotted #EEE; */ /* TODO make focused visible */
-	color: inherit; 
+.navbar-custom .nav li a:focus {
+    color: inherit;
 }
 
 @media(min-width:767px) {
@@ -229,9 +196,9 @@ a:focus {
         padding: 1em 0;
         border-bottom: 0;
         letter-spacing: 1px;
-        -webkit-transition: background .2s ease-in-out,padding .3s ease-in-out;
-        -moz-transition: background .2s ease-in-out,padding .3s ease-in-out;
-        transition: background .2s ease-in-out,padding .3s ease-in-out; 
+        -webkit-transition: background .2s ease-in-out, padding .3s ease-in-out;
+        -moz-transition: background .2s ease-in-out, padding .3s ease-in-out;
+        transition: background .2s ease-in-out, padding .3s ease-in-out;
     }
 }
 
@@ -240,42 +207,39 @@ a:focus {
         height: 100%;
         padding: 0;
     }
-
     .intro .intro-body .brand-heading {
         font-size: 100px;
     }
-
     .intro .intro-body .intro-text {
         font-size: 25px;
     }
 }
-
-
 /* begin ram */
+
 .ad-list-inline {
-	text-transform: uppercase;
+    text-transform: uppercase;
 }
 
 ul.ad-list-inline li {
-	border-right: 1px solid black;	
+    border-right: 1px solid black;
 }
 
 ul.ad-list-inline li:last-child {
-	border-right: none;
+    border-right: none;
 }
 
 ul.ad-list-inline li a {
-	color: inherit;
-	font-family: inherit;
-	padding: 0px 1.2ch;
-	display: block;
-	text-decoration: none;
-	line-height: 1;
+    color: inherit;
+    font-family: inherit;
+    padding: 0px 1.2ch;
+    display: block;
+    text-decoration: none;
+    line-height: 1;
 }
 
 ul.ad-list-inline li a:hover,
 ul.ad-list-inline li a:focus {
-	color: #f00; /* pal: rosso */	
+    color: #f00; /* pal: rosso */
 }
 
 blockquote.adpal-arancione,
@@ -284,264 +248,279 @@ blockquote.adpal-rosa,
 blockquote.adpal-grigio,
 blockquote.adpal-bianco,
 blockquote.adpal-nero,
-blockquote, blockquote p {
-	color: inherit;
-	font-family: "Franklin Gothic Medium Cond",Helvetica,sans-serif; 	
+blockquote,
+blockquote p {
+    color: inherit;
+    font-family: "Franklin Gothic Medium Cond", Helvetica, sans-serif;
     border: 0;
-	font-size: 16pt;
-	padding: 0;
-	margin: 0 auto;	
-	margin-top: 1.4em;
+    font-size: 16pt;
+    padding: 0;
+    margin: 0 auto;
+    margin-top: 1.4em;
+    margin-bottom: 40px;
 }
 
-blockquote:before {
-    font-family: "All Over Again",serif;
-    content: "\201C";
-    font-size: 90px;
+blockquote {
+    margin: 0;
+    padding-left: 50px!important;
+}
+
+blockquote span.quote-wrapper {
+    margin-left: -50px!important;
     float: left;
-    position: relative; 
-    top: .25em;
-    left: -5px;
+}
+
+img.quote {
+    width: 50px;
+    height: auto;
 }
 
 blockquote p {
-	line-height: 1.1;
-	margin: initial;
-	padding: initial;
+    line-height: 1.1;
+    margin: initial;
+    padding: initial;
+    font-family: 'Oswald', sans-serif;
+    font-size: 38px;
+    line-height: 56px;
 }
 
 @media(min-width:767px) {
-	blockquote.adpal-arancione,
-	blockquote.adpal-rosso,
-	blockquote.adpal-rosa,
-	blockquote.adpal-grigio,
-	blockquote.adpal-bianco,
-	blockquote.adpal-nero,
-	blockquote, blockquote p {
-		color: inherit;
-		font-size: 30pt;
-	}
-	
-	blockquote:before {
-	    font-size: 180px;
-	}
+    blockquote.adpal-arancione, blockquote.adpal-rosso, blockquote.adpal-rosa, blockquote.adpal-grigio, blockquote.adpal-bianco, blockquote.adpal-nero, blockquote, blockquote p {
+        color: inherit;
+    }
+    blockquote {
+        margin: 0;
+        padding-left: 140px!important;
+    }
+    blockquote span.quote-wrapper {
+        float: left;
+        margin-left: -140px!important;
+    }
+    img.quote {
+        width: 120px;
+        height: auto;
+    }
+    blockquote p {
+        padding-left: 0;
+    }
 }
 
 .adpal-arancione,
 blockquote.adpal-arancione:before {
-    color: #ff4d33; /* pal: arancione */
+    color: #ff4d33;   /* pal: arancione */
 }
 
 .adpal-rosso,
 blockquote.adpal-rosso:before {
-    color: #f00; /* pal: rosso */
+    color: #f00;    /* pal: rosso */
 }
 
 .adpal-rosa,
 blockquote.adpal-rosa:before {
-    color: #fc0099; /* pal: rosa */
+    color: #fc0099;    /* pal: rosa */
 }
 
 .adpal-grigio,
 blockquote.adpal-grigio:before {
-    color: #333333; /* pal: grigio */	
+    color: #333333;    /* pal: grigio */
 }
 
 .adpal-bianco,
 blockquote.adpal-bianco:before {
-    color: #fFF; /* pal: bianco */	
+    color: #fff; /* pal: bianco */
 }
 
 .adpal-nero,
 blockquote.adpal-nero:before {
-    color: #000; /* pal: nero */	
+    color: #000;    /* pal: nero */
 }
-
 
 blockquote footer {
-	text-align: right;
-	padding: 0;
-	color: inherit;
+    text-align: right;
+    padding: 0;
+    color: inherit;
 }
 
-blockquote.ad-footprint-orange footer:before, blockquote.ad-footprint-red footer:before {
-	content: "\2014\20";
+blockquote.ad-footprint-orange footer:before,
+blockquote.ad-footprint-red footer:before {
+    content: "\2014\20";
 }
 
 .ad-paninis {
-	font-size: 18px;
-	letter-spacing: 0.03em;
-	line-height: 1.1;
-	width: 95%;
-	margin-left: auto;
-	margin-right: auto;
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    letter-spacing: 0.03em;
+    line-height: 1.1;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .ad-panini {
-	margin-bottom: 2em;
+    margin-bottom: 2em;
 }
 
 .ad-panini.animated {
-	-webkit-animation-duration: 3s;
+    -webkit-animation-duration: 3s;
     -moz-animation-duration: 3s;
     animation-duration: 3s;
 }
 
-.ad-paninis .ad-caption-name, .ad-paninis .ad-caption-prof {
-	padding: 0;
-	text-align: center;
+.ad-paninis .ad-caption-name,
+.ad-paninis .ad-caption-prof {
+    padding: 0;
+    text-align: center;
 }
 
 @media (min-width: 768px) {
-	.ad-paninis .ad-caption-name, .ad-paninis .ad-caption-prof {
-	 	margin-left: 12%;
-		text-align: left;
-	}	
+    .ad-paninis .ad-caption-name,
+    .ad-paninis .ad-caption-prof {
+        margin-left: 12%;
+        text-align: left;
+    }
 }
-
 
 @media (min-width: 992px) {
-	.ad-paninis .ad-caption-name, .ad-paninis .ad-caption-prof {
-	 margin-left:  .2em;
-	}	
+    .ad-paninis .ad-caption-name,
+    .ad-paninis .ad-caption-prof {
+        margin-left: .2em;
+    }
 }
 
+img.logo {
+    max-width: 250px;
+    margin-bottom: 20px;
+}
 
 .ad-paninis .ad-caption-name {
-	margin-top: .6em;
+    margin-top: .6em;
 }
 
 .ad-paninis .ad-caption-name a {
-	font-size: 20px;
-	font-family: "Franklin Gothic Medium Cond",Helvetica,sans-serif;
-	text-transform: none;
-	text-decoration: none;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+    text-transform: none;
+    text-decoration: none;
 }
 
 .ad-paninis .ad-caption-prof {
-	/* font-family: inherit; / * actually already set by body */
-	font-family: /* "Linux Libertine", */ "Times New Roman",serif; /* ram -> design mistake */
+    font-family:  "Times New Roman", serif; 
 }
 
 hr {
-	border-color: black;
+    border-color: black;
 }
 
 section > hr {
-	width: 96%;
+    width: 96%;
 }
 
 header > .container-fluid {
-	padding-right: initial;
-	padding-left: initial;
+    padding-right: initial;
+    padding-left: initial;
 }
-
 /* ram  overwrite some bootstraps classes*/
+
 .ad-form {
-	font-family: "Franklin Gothik Book",Helvetica,sans-serif;
-	width: 95%;
-	margin-right: auto;
-  	margin-left: auto;
+    font-family: "Linux Libertine", "Times New Roman", serif;
+    width: 95%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 50px;
 }
 
 @media (min-width: 768px) {
-	.ad-form {
-	width: 100%;
-	
-	}
+    .ad-form {
+        width: 100%;
+    }
 }
 
 .form-control:focus {
-	border-color: #f00; /* pal: Rosso */	
+    border-color: #f00;    /* pal: Rosso */
 }
-  
-.ad-artist-photo {
-	margin-bottom: 2em;
-} 
 
+.ad-artist-photo {
+    margin-bottom: 2em;
+}
 /* TODO use styled, make background slitly transparent, http://css-tricks.com/rgba-browser-support/ */
+
 #language-menu {
-	position: relative
+    position: relative
 }
 
 nav.ad-language-menu {
-	position: fixed; 
-	right: 0; 
-	top: 4em; 
-	width: 13ex; 
-	z-index: 11032;	
+    position: fixed;
+    right: 0;
+    top: 4em;
+    width: 13ex;
+    z-index: 11032;
 }
 
 nav.ad-language-menu ul {
- 	color: #fff; 			/* pal: Bianco */ 
- 	text-transform: uppercase;
- 	list-style-type: none;
+    color: #fff;   /* pal: Bianco */
+    
+    text-transform: uppercase;
+    list-style-type: none;
 }
 
 nav.ad-language-menu ul li {
-	padding-left: 1ex;	 
-	width: 100%;
-	font-size: 120%;
-	line-height: 1.9;
-	margin-left: auto; 
-	margin-right: 0;
-	box-shadow: 3px 3px 3px grey;
-	background: rgb(255, 0, 0); 			/* pal: Rosso */ 
+    padding-left: 1ex;
+    width: 100%;
+    font-size: 120%;
+    line-height: 1.9;
+    margin-left: auto;
+    margin-right: 0;
+    box-shadow: 3px 3px 3px grey;
+    background: rgb(255, 0, 0);    /* pal: Rosso */
 }
 
 nav.ad-language-menu ul li[lang] {
-	background: rgb(252, 0, 153); 			/* pal: Rosa */
-	width: 70%; 
-	padding-left: 0;	/* set padding-left: 1ex; back in nested <a> to make the whole area clickable */ 
+    background: rgb(252, 0, 153);    /* pal: Rosa */
+    width: 70%;
+    padding-left: 0;    /* set padding-left: 1ex; back in nested <a> to make the whole area clickable */
 }
 
-nav.ad-language-menu ul li[lang]:hover, 
+nav.ad-language-menu ul li[lang]:hover,
 nav.ad-language-menu ul li[lang]:active {
-	width: 85%;
-	
+    width: 85%;
     -webkit-transition: width .2s ease-in-out;
     -moz-transition: width .2s ease-in-out;
     transition: width .2s ease-in-out;
 }
 
 nav.ad-language-menu ul li[lang] a {
-	font-family: "Linux Libertine","Times New Roman",serif;
-	padding-left: 1ex;	 
-	color: inherit;
-	display: block;
-	width: 100%
+    font-family: "Linux Libertine", "Times New Roman", serif;
+    padding-left: 1ex;
+    color: inherit;
+    display: block;
+    width: 100%
 }
-
 /* end ram */
 
-@-webkit-keyframes pulse {    
+@-webkit-keyframes pulse {
     0 {
         -webkit-transform: scale(1);
         transform: scale(1);
     }
-
     50% {
         -webkit-transform: scale(1.2);
         transform: scale(1.2);
     }
-
     100% {
         -webkit-transform: scale(1);
         transform: scale(1);
     }
 }
 
-@-moz-keyframes pulse {    
+@-moz-keyframes pulse {
     0 {
         -moz-transform: scale(1);
         transform: scale(1);
     }
-
     50% {
         -moz-transform: scale(1.2);
         transform: scale(1.2);
     }
-
     100% {
         -moz-transform: scale(1);
         transform: scale(1);
@@ -549,25 +528,24 @@ nav.ad-language-menu ul li[lang] a {
 }
 
 header img.logo {
-	margin-top: 1em;
-	width: 10em;
+    margin-top: 1em;
+    width: 10em;
+    padding-top:120px;
 }
 
 .content-section {
-   /* padding-top: 100px; */ 
-   padding-top: 20px; /* ram  */ 	 
-   /*  min-height: 100%; ram  */
+    padding-top: 20px;
 }
 
 .kontakt-section h1 {
-	margin-bottom: 1.2em;
+    margin-bottom: 1.2em;
 }
 
-/* .download-section { */
 .kontakt-section {
     width: 100%;
     padding: 15% 0;
-    color: #000; /* pal Nero */
+    color: #000;    /* pal Nero */
+    
     background: url(../img/bg/biel-bienne_bw.png) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -576,31 +554,30 @@ header img.logo {
 }
 
 @media (max-width: 767px) {
-	.kontakt-section .ad-logo-block {
-		text-align: center;	
-	}		
+    .kontakt-section .ad-logo-block {
+        text-align: center;
+    }
 }
 
 .kontakt-section img.logo {
-	margin-bottom: .5em;
-	width: 14ch;
+    margin-bottom: .5em;
+    width: 14ch;
 }
 
 @media(min-width:768px) {
     .content-section {
-	    padding-top: 30px; /* ram  */ 	 
-		min-height: 100%;
+        padding-top: 50px;
+        min-height: 100%;
     }
-
-	.kontakt-section {
-	    padding-top: 20%;
-	}
+    .kontakt-section {
+        padding-top: 30px;
+        padding-bottom: 0;
+    }
 }
 
 .btn {
     text-transform: uppercase;
-    /* font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif; */
-    font-family: "Franklin Gothic Medium Cond",Helvetica,sans-serif;
+    font-family: 'Oswald', sans-serif;
     font-weight: 400;
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
@@ -608,21 +585,19 @@ header img.logo {
 }
 
 .btn-default {
-	border: 1px solid black;  /* pal: nero */ 
-    color: white;	/* pal bianco */ 
-    background-color: #333333; /* pal grigio */ /* fallback */ 
-    background-color: rgba(0,0,0,.5);  /* pal nero */ 
+    border: 1px solid black;    /* pal: nero */
+    color: white;    /* pal bianco */
+    background-color: #333333;    /* pal grigio */    /* fallback */
+    background-color: rgba(0, 0, 0, .5);    /* pal nero */
 }
 
 .btn-default:hover,
 .btn-default:focus {
-/*    border: 1px solid #219ab3; */
     border: 1px solid black;
     outline: 0;
-    color:  #333333; /* pal grigio */
-    background-color: #fff; /* pal bianco */ /* fallback */
-        background-color: rgba(255,255,255,.5);  /* pal bianco */ 
-    
+    color: #333333;    /* pal grigio */
+    background-color: #fff;    /* pal bianco */    /* fallback */
+    background-color: rgba(255, 255, 255, .5);    /* pal bianco */
 }
 
 footer {
@@ -633,31 +608,78 @@ footer p {
     margin: 0;
 }
 
-body {
-    /* webkit-tap-highlight-color: rgba(255,255,255,.2); */ /* TODO: find out, this is for Safari on iPhone */
-}
-
 .html5 a {
-	display: inline-block;
+    display: inline-block;
 }
-
 
 .debug {
-	display: none;
+    display: none;
 }
 
 .html5 .html5logo img {
-	width: 50px;
-	height: auto;
+    width: 50px;
+    height: auto;
 }
 
 .html5 .css3logo {
-	position: relative;
+    position: relative;
     left: -13px;
-    top: 7px;	
+    top: 7px;
 }
+
 .html5 .css3logo img {
-	width: 18px; 
-	height: auto;
-	vertical-align: middle;
+    width: 18px;
+    height: auto;
+    vertical-align: middle;
+}
+
+/* Customizations, attantion some of thoses styles already defined earlyer */
+
+#mitglieder h1 {
+    margin-top: -10px;
+    margin-bottom: 30px;
+}
+
+ul.nav.nav-justified {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.ad-panini {
+    text-align: center;
+}
+
+@media(min-width:768px) {
+    .ad-panini {
+        text-align: center;
+        height: 300px;
+    }
+}
+
+.ad-panini img {
+    text-align: center;
+    max-width: 80%;
+}
+
+.ad-panini .ad-caption-name,
+.ad-panini .ad-caption-prof {
+    text-align: center;
+}
+
+div.skinny-text {
+    margin: 0 auto;
+    width: 90%;
+    border: none;
+}
+
+@media(min-width:368px) {
+    div.skinny-text {
+        width: 80%;
+    }
+}
+
+@media(min-width:768px) {
+    div.skinny-text {
+        width: 60%;
+    }
 }
