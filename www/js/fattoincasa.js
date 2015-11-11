@@ -52,3 +52,29 @@ $('nav').on('affix.bs.affix', function (){
 $('nav').on('affix-top.bs.affix', function (){
      $('body').css('margin-top', - 98);
 });
+
+/* Project section */
+
+	
+$(document).ready(function(){
+	
+	$('#art-slider .prev-img').on('click', function(){
+		var art = $(this).data('art');
+		
+		if ( $(window).width() < 768){
+			$(this).parent().find('a')[0].click();			
+		}
+		else if($('#art-slider .big-item').hasClass('big-'+art)){
+			$('#art-slider .big-item').fadeOut();
+			$('#art-slider .big-'+art).fadeIn();
+			setTimeout(function(){
+				$('#art-slider .big-item').removeClass('active');
+				$('#art-slider .big-'+art).addClass('active');
+			}, 500)
+			$('#art-slider .prev-img').removeClass('active');
+			$(this).addClass('active');
+		}
+	});
+	
+});
+	
