@@ -372,21 +372,6 @@ blockquote.ad-footprint-red footer:before {
     text-align: center;
 }
 
-@media (min-width: 768px) {
-    .ad-paninis .ad-caption-name,
-    .ad-paninis .ad-caption-prof {
-        margin-left: 12%;
-        text-align: left;
-    }
-}
-
-@media (min-width: 992px) {
-    .ad-paninis .ad-caption-name,
-    .ad-paninis .ad-caption-prof {
-        margin-left: .2em;
-    }
-}
-
 img.logo {
     max-width: 250px;
     margin-bottom: 20px;
@@ -633,7 +618,7 @@ footer p {
     vertical-align: middle;
 }
 
-/* Customizations, attantion some of thoses styles already defined earlyer */
+/* Customizations, attention some of thoses styles already defined earlyer */
 
 #mitglieder h1 {
     margin-top: -10px;
@@ -661,11 +646,6 @@ ul.nav.nav-justified {
     max-width: 80%;
 }
 
-.ad-panini .ad-caption-name,
-.ad-panini .ad-caption-prof {
-    text-align: center;
-}
-
 div.skinny-text {
     margin: 0 auto;
     width: 90%;
@@ -686,8 +666,6 @@ div.skinny-text {
 
 
 /* Project section style */
-
-
 #art-slider {
   font-family: 'Fira Sans', sans-serif;
   margin: 60px 0;
