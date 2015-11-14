@@ -780,7 +780,7 @@ div.skinny-text {
                   color: #09e3d1; }
                 #art-slider #slider-inner .big-items .big-item .big-item-info .info-right .big-title .big-title-color.orchestra {
                   color: #2da8df; }
-                #art-slider #slider-inner .big-items .big-item .big-item-info .info-right .big-title .big-title-color.choral {
+                #art-slider #slider-inner .big-items .big-item .big-item-info .info-right .big-title .big-title-color.total {
                   color: #f99f03; }
             #art-slider #slider-inner .big-items .big-item .big-item-info .info-right .event-block {
               position: absolute;
@@ -891,5 +891,5 @@ div.skinny-text {
               color: #09e3d1; }
             #art-slider #slider-inner .prev-items .prev-item .prev-title .prev-title-color.orchestra {
               color: #2da8df; }
-            #art-slider #slider-inner .prev-items .prev-item .prev-title .prev-title-color.choral {
+            #art-slider #slider-inner .prev-items .prev-item .prev-title .prev-title-color.total {
               color: #f99f03; }
