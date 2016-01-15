@@ -771,15 +771,15 @@ div.skinny-text {
                 font-weight: 700;
                 font-size: 56px; }
                 #art-slider #slider-inner .big-items .big-item .big-item-info .info-right .big-title .big-title-color.kunst {
-                  color: #d256fb; }
+                  color: #ff18a1; }
                 #art-slider #slider-inner .big-items .big-item .big-item-info .info-right .big-title .big-title-color.dance {
                   color: #5af10f; }
                 #art-slider #slider-inner .big-items .big-item .big-item-info .info-right .big-title .big-title-color.ensemble {
-                  color: #ff18a1; }
+                  color: #d21685; }
                 #art-slider #slider-inner .big-items .big-item .big-item-info .info-right .big-title .big-title-color.recital {
                   color: #09e3d1; }
-                #art-slider #slider-inner .big-items .big-item .big-item-info .info-right .big-title .big-title-color.orchestra {
-                  color: #2da8df; }
+                #art-slider #slider-inner .big-items .big-item .big-item-info .info-right .big-title .big-title-color.future {
+                  color: #00b8ee; }
                 #art-slider #slider-inner .big-items .big-item .big-item-info .info-right .big-title .big-title-color.total {
                   color: #f99f03; }
             #art-slider #slider-inner .big-items .big-item .big-item-info .info-right .event-block {
@@ -889,7 +889,7 @@ div.skinny-text {
               color: #ff18a1; }
             #art-slider #slider-inner .prev-items .prev-item .prev-title .prev-title-color.recital {
               color: #09e3d1; }
-            #art-slider #slider-inner .prev-items .prev-item .prev-title .prev-title-color.orchestra {
+            #art-slider #slider-inner .prev-items .prev-item .prev-title .prev-title-color.future {
               color: #2da8df; }
             #art-slider #slider-inner .prev-items .prev-item .prev-title .prev-title-color.total {
               color: #f99f03; }
