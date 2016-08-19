@@ -1,4 +1,4 @@
 verein.artdialog.ch
 ===================
 
-## [Цветовая гамма сайта] (wiki/ColorTheme)
+### [Цветовая гамма сайта] (../../wiki/ColorTheme)

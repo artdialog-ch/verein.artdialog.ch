@@ -389,7 +389,7 @@ img.logo {
 }
 
 .ad-paninis .ad-caption-prof {
-    font-family:  "Times New Roman", serif; 
+    font-family:  "Times New Roman", serif;
 }
 
 hr {
@@ -443,10 +443,26 @@ nav.ad-language-menu {
 
 nav.ad-language-menu ul {
     color: #fff;   /* pal: Bianco */
-    
+
     text-transform: uppercase;
     list-style-type: none;
 }
+
+nav.ad-language-menu ul li:nth-child(3)
+{
+  background: rgb(255, 0, 0);    /* pal: Rosso */
+}
+
+nav.ad-language-menu ul li:nth-child(1)
+{
+  background: rgb(252, 0, 153);    /* pal: Rosa */
+}
+
+nav.ad-language-menu ul li:nth-child(2)
+{
+  background: rgb(255,77,51);    /* pal: Arancione */
+}
+
 
 nav.ad-language-menu ul li {
     padding-left: 1ex;
@@ -456,11 +472,11 @@ nav.ad-language-menu ul li {
     margin-left: auto;
     margin-right: 0;
     box-shadow: 3px 3px 3px grey;
-    background: rgb(255, 0, 0);    /* pal: Rosso */
+    // background: rgb(255, 0, 0);    /* pal: Rosso */
 }
 
 nav.ad-language-menu ul li[lang] {
-    background: rgb(252, 0, 153);    /* pal: Rosa */
+    //background: rgb(252, 0, 153);    /* pal: Rosa */
     width: 70%;
     padding-left: 0;    /* set padding-left: 1ex; back in nested <a> to make the whole area clickable */
 }
@@ -530,7 +546,7 @@ header img.logo {
     width: 100%;
     padding: 15% 0;
     color: #000;    /* pal Nero */
-    
+
     background: url(../img/bg/biel-bienne_bw.png) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -861,9 +877,9 @@ div.skinny-text {
               #art-slider #slider-inner .prev-items .prev-item .prev-img .prev-img-color {
                 width: 100%;
                 display: block; } }
-		#art-slider #slider-inner .prev-items .prev-item .prev-img .prev-img-bw{            
+		#art-slider #slider-inner .prev-items .prev-item .prev-img .prev-img-bw{
 			width:100%;
-            }		
+            }
           @media (min-width: 0px) and (max-width: 767px) {
             #art-slider #slider-inner .prev-items .prev-item .prev-img .prev-img-bw {
               width: 100%; } }
