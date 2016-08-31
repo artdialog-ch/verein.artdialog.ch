@@ -798,6 +798,8 @@ div.skinny-text {
                   color: #00b8ee; }
                 #art-slider #slider-inner .big-items .big-item .big-item-info .info-right .big-title .big-title-color.total {
                   color: #f99f03; }
+				  #art-slider #slider-inner .big-items .big-item .big-item-info .info-right .big-title .big-title-color.wein {
+                  color: #9E1F63; }
             #art-slider #slider-inner .big-items .big-item .big-item-info .info-right .event-block {
               position: absolute;
               width: 70%;
@@ -909,3 +911,5 @@ div.skinny-text {
               color: #2da8df; }
             #art-slider #slider-inner .prev-items .prev-item .prev-title .prev-title-color.total {
               color: #f99f03; }
+			  #art-slider #slider-inner .prev-items .prev-item .prev-title .prev-title-color.wein {
+              color: #9E1F63; }
