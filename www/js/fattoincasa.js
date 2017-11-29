@@ -101,4 +101,21 @@ $(document).ready(function(){
 	});
 	
 });
+
+$(document).ready(function(){
+$('#pj-slider .slider').owlCarousel({
+loop:true,
+autoplay:true,
+autoplayTimeout:5000,
+autoplayHoverPause:true,
+nav:false,
+dots:true,
+smartSpeed:1000,
+slideBy:1,
+margin:20,
+items:1,
+animateOut: 'fadeOut',
+});
+
+});
 	
